@@ -59,6 +59,7 @@ html,body {
 
 .collectable-coin {
   height: 100vh;
+  max-height: 100dvh;
   width: 100vw;
   
   display: flex;
