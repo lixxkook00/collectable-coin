@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collectable Coin</title>
+  
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="collectable-coin">
+    <!-- BALANCE -->
+    <div class="collectable-coin-balance center">
+      <div class="collectable-coin-icon">
+
+      </div>
+      <div id="collectableCoinValue" class="collectable-coin-value">
+        1.0000
+      </div>
+    </div>
+
+    <!-- LEVEL -->
+    <div class="collectable-coin-level center">
+      Silver →
+    </div>
+
+    <!-- COIN -->
+    <div class="collectable-coin-main center">
+      <img id="collectableCoin" class="" src="/images/coin.png" alt="">
+      <audio id="collectableAudio" src="/sounds/coin-collect.mp3"></audio>
+      <div id="collectableCoinFloating" class="collectable-coin-floating centering"></div>
+    </div>
+
+    <!-- ENERGY -->
+    <div id="collectableCoinEnergy" class="collectable-coin-energy center">
+      70%
+    </div>
+
+    <!-- PROCESS BAR -->
+    <div class="collectable-coin-process center">
+      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+    </div>
+  </div>
+</body>
+
+<script src="/js/scripts.js"></script>
+</html>
